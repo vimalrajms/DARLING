@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#100819">
+
+    <title>DARLING | Anime Companion</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background-glow glow-one"></div>
+<div class="background-glow glow-two"></div>
+
+<main class="app">
+
+    <header class="topbar">
+        <div class="logo">D<span>♡</span></div>
+
+        <div>
+            <h1>DARLING</h1>
+            <p>YOUR DIGITAL COMPANION</p>
+        </div>
+
+        <div class="status">
+            <span></span> NO AI
+        </div>
+    </header>
+
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <p class="eyebrow">✦ YOUR LITTLE UNIVERSE</p>
+
+            <h2>
+                Meet your<br>
+                little <span>Darling.</span>
+            </h2>
+
+            <p class="description">
+                A cute anime-inspired digital companion.
+                Let's chat, change moods and explore
+                a little world of animations together.
+            </p>
+
+            <div class="buttons">
+                <button id="helloBtn" class="primary">
+                    Say Hello ♡
+                </button>
+
+                <button id="moodBtn" class="secondary">
+                    Change Mood ✨
+                </button>
+            </div>
+
+        </div>
+
+
+        <div class="character-card">
+
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+
+            <span class="spark spark-one">✦</span>
+            <span class="spark spark-two">✧</span>
+            <span class="spark spark-three">♡</span>
+
+            <div id="avatar" class="avatar happy">
+
+                <div class="hair-back"></div>
+
+                <div class="hair-side hair-left"></div>
+                <div class="hair-side hair-right"></div>
+
+                <div class="face">
+
+                    <div class="fringe"></div>
+
+                    <div class="eyebrow brow-left"></div>
+                    <div class="eyebrow brow-right"></div>
+
+                    <div class="eye eye-left">
+                        <div class="pupil"></div>
+                        <div class="shine"></div>
+                    </div>
+
+                    <div class="eye eye-right">
+                        <div class="pupil"></div>
+                        <div class="shine"></div>
+                    </div>
+
+                    <div class="blush blush-left"></div>
+                    <div class="blush blush-right"></div>
+
+                    <div id="mouth" class="mouth"></div>
+
+                </div>
+
+                <div class="neck"></div>
+
+                <div class="collar"></div>
+
+                <div class="body">
+                    <div class="neck-bow"></div>
+                    <div class="dress-shine"></div>
+                </div>
+
+            </div>
+
+            <div class="mood-label">
+                <span class="live-dot"></span>
+                <span id="moodLabel">MOOD: HAPPY</span>
+            </div>
+
+            <p class="character-caption">
+                "Hiii! I'm Darling ♡"
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="content">
+
+        <div class="panel chat-panel">
+
+            <div class="panel-heading">
+                <div>
+                    <p class="eyebrow">YOUR SPACE</p>
+                    <h3>Chat with Darling</h3>
+                </div>
+
+                <span class="tag">BUILT-IN CHAT</span>
+            </div>
+
+
+            <div id="messages" class="messages">
+
+                <div class="message darling-message">
+                    <div class="message-icon">D</div>
+
+                    <div>
+                        <small>DARLING</small>
+                        <p>
+                            Hiii! Welcome to my little world! ♡
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <form id="chatForm" class="chat-form">
+
+                <input
+                    id="chatInput"
+                    type="text"
+                    placeholder="Message Darling..."
+                    maxlength="240"
+                    autocomplete="off"
+                    required
+                >
+
+                <button type="submit" aria-label="Send">
+                    ➤
+                </button>
+
+            </form>
+
+
+            <div class="chat-controls">
+
+                <button id="voiceBtn">
+                    🔊 Voice: ON
+                </button>
+
+                <button id="clearBtn">
+                    Clear Chat
+                </button>
+
+            </div>
+
+            <p class="note">
+                AI features will be added later.
+            </p>
+
+        </div>
+
+
+        <aside class="side-panel">
+
+            <div class="panel">
+
+                <p class="eyebrow">EXPRESSIONS</p>
+
+                <h3>Choose a mood</h3>
+
+                <div class="mood-buttons">
+
+                    <button data-mood="happy">
+                        ♡ Happy
+                    </button>
+
+                    <button data-mood="shy">
+                        ✿ Shy
+                    </button>
+
+                    <button data-mood="sleepy">
+                        ☾ Sleepy
+                    </button>
+
+                    <button data-mood="surprised">
+                        ✧ Surprised
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="panel status-panel">
+
+                <p class="eyebrow">PROJECT STATUS</p>
+
+                <div class="status-row">
+                    <span>Anime Avatar</span>
+                    <b>READY</b>
+                </div>
+
+                <div class="status-row">
+                    <span>Animations</span>
+                    <b>READY</b>
+                </div>
+
+                <div class="status-row">
+                    <span>Voice Reply</span>
+                    <b>BROWSER</b>
+                </div>
+
+                <div class="status-row">
+                    <span>AI Brain</span>
+                    <b class="later">LATER</b>
+                </div>
+
+                <div class="status-row">
+                    <span>ESP32</span>
+                    <b class="later">NEXT</b>
+                </div>
+
+            </div>
+
+        </aside>
+
+    </section>
+
+
+    <footer>
+        <span>♡ DARLING</span>
+        <span>PHASE 01 · ANIME COMPANION</span>
+    </footer>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
