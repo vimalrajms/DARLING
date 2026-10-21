@@ -160,7 +160,7 @@ function generateReply(input) {
 }
 
 async function sendToBackend(userText) {
-    const response = await fetch(`${BACKEND_URL}/api/message`, {
+    const response = await fetch("https://mini-darling-backend.onrender.com/api/message", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
