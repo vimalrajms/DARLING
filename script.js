@@ -4,7 +4,7 @@
 // English + Tamil + Tanglish
 // ========================================
 
-const BACKEND_URL = "https://mini-darling-backend.onrender.com";
+const BACKEND_URL = "https://mini-darling-backend.onrender.com/api/message";
 
 const avatar = document.getElementById("avatar");
 const moodLabel = document.getElementById("moodLabel");
